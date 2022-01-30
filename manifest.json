@@ -1,0 +1,22 @@
+{
+    "name" : "Table to Excel",
+    "manifest_version" : 3,
+    "version" : "0.0.1",
+    "description": "This extension allows you to easliy take the leads from Indiamart website onto an Excel with information you want in seconds not hours.",
+    "content_scripts" : [
+        {
+            "matches" : ["*://seller.indiamart.com/*"],
+            "js" : ["xlsx.mini.js" , "content.js"]
+        }
+    ],
+    "action" : {
+        "default_icon" : "Logo1.png",
+        "default_popup" : "popup.html",
+        "default_title" : "Convert Table to Excel(T2E)"
+    },
+    "icons": {
+        "16": "Logo1.png",
+        "48": "Logo1.png",
+       "128": "Logo1.png" 
+    }
+}
